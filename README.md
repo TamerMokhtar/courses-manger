@@ -1,89 +1,90 @@
-﻿# courses-manger
-A simple Command Line Interface (CLI) tool for managing TO courses. This tool allows you to add new courses and list all existing courses.
+# TO Courses Manager CLI
+
+## Description
+
+A command-line interface (CLI) tool for managing courses, allowing users to add and list courses easily through the terminal.
 
 ## Features
 
-- **Add a new course**: Add a course with a title and price.
-- **List all courses**: Display all courses in a table format.
+- Add new courses with title and price
+- List all existing courses
+- Simple and intuitive command-line interface
+- Persistent storage using JSON file
 
+## Prerequisites
+
+- Node.js (version 18 or higher)
+- npm (Node Package Manager)
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/to-courses-manager.git
-Navigate to the project directory:
+   git clone <your-repository-url>
+   cd to-courses-manger
+   ```
 
-bash
-Copy
-cd to-courses-manager
-Install the dependencies:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-bash
-Copy
-npm install
-Make the script executable:
+3. Link the CLI globally (optional):
+   ```bash
+   npm link
+   ```
 
-bash
-Copy
-chmod +x index.js
-Install the CLI globally (optional):
+## Usage
 
-bash
-Copy
-npm install -g .
-Usage
-Add a new course
-To add a new course, run the following command:
+### Adding a Course
 
-bash
-Copy
+To add a new course, use the `add` or `a` command:
+
+```bash
 to-courses-manger add
-You will be prompted to enter the course title and price.
+```
 
-List all courses
-To list all courses, run the following command:
+You'll be prompted to enter:
+- Course title
+- Course price
 
-bash
-Copy
+### Listing Courses
+
+To view all courses, use the `list` or `l` command:
+
+```bash
 to-courses-manger list
-This will display all the courses in a table format.
+```
 
-Example
-bash
-Copy
-$ to-courses-manger add
-? Enter course title: Python
-? Enter course price: 5000
-Course added successfully
+## Project Structure
 
-$ to-courses-manger list
-┌─────────┬──────────┬───────┐
-│ (index) │  title   │ price │
-├─────────┼──────────┼───────┤
-│    0    │ 'JavaScript' │ 4000  │
-│    1    │   'C++'   │ 2000  │
-│    2    │ 'Node.js' │ 10000 │
-│    3    │  'React'  │ 20000 │
-│    4    │  'Python' │ 5000  │
-└─────────┴──────────┴───────┘
-Dependencies
-commander: For building the CLI.
+- `index.js`: Main CLI application
+- `courses.json`: JSON file storing course data
+- `package.json`: Project configuration and dependencies
 
-inquirer: For interactive command line prompts.
+## Dependencies
 
-Contributing
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+- [Commander.js](https://github.com/tj/commander.js/): CLI framework
+- [Inquirer.js](https://github.com/SBoudrias/Inquirer.js): Interactive command-line user interfaces
 
-License
-This project is licensed under the ISC License. See the LICENSE file for details.
+## Scripts
 
-Copy
+- `npm start`: Run the application with nodemon for development
 
-### Explanation:
-- **Features**: Briefly describes what the CLI can do.
-- **Installation**: Steps to install the project locally.
-- **Usage**: Explains how to use the CLI with examples.
-- **Dependencies**: Lists the main dependencies used in the project.
-- **Contributing**: Encourages contributions and provides guidelines.
-- **License**: Specifies the license under which the project is distributed.
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the ISC License.
+
+## Contact
+
+Your Name - your.email@example.com
+
+Project Link: [https://github.com/yourusername/to-courses-manger](https://github.com/yourusername/to-courses-manger)

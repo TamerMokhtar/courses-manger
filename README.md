@@ -79,12 +79,3 @@ to-courses-manger list
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## License
-
-Distributed under the ISC License.
-
-## Contact
-
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/yourusername/to-courses-manger](https://github.com/yourusername/to-courses-manger)
